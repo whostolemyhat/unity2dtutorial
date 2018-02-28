@@ -10,6 +10,15 @@ public class MessagingClientReceiver : MonoBehaviour {
 	}
 	
 	void PlayerTryingToLeave() {
+		var dialogue = GetComponent<ConversationComponent>();
+		if (dialogue != null) {
+			if (dialogue.Conversations != null && dialogue.Conversations.Length > 0) {
+				var conversation = dialogue.Conversations[0];
+				if (conversation != null) {
+					ConversationManager.Instance.StartConversation(conversation);
+				}
+			}
+		}
 		Debug.Log("I'm leaving " + tag.ToString());
 	}
 }
