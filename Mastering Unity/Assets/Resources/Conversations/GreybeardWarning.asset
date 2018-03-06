@@ -9,6 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a80c0177dd4341efb733dba83d72ecd, type: 3}
-  m_Name: New Conversation
+  m_Name: GreybeardWarning
   m_EditorClassIdentifier: 
-  ConversationLines: []
+  ConversationLines:
+  - SpeakingCharacterName: Greybeard
+    ConversationText: Sorry mate, I'd give that a couple of minutes
+    DisplayPic: {fileID: 21300000, guid: 9e35024a09ca84a74af5503413a007cc, type: 3}
+  - SpeakingCharacterName: Hero
+    ConversationText: Pardon?
+    DisplayPic: {fileID: 21300010, guid: 4b91c33605a7d49308f9ad3221bdbcaa, type: 3}
+  - SpeakingCharacterName: Greybeard
+    ConversationText: Yeah bit of a heavy one last night
+    DisplayPic: {fileID: 21300010, guid: 9e35024a09ca84a74af5503413a007cc, type: 3}
+  - SpeakingCharacterName: Hero
+    ConversationText: '...'
+    DisplayPic: {fileID: 21300010, guid: 4b91c33605a7d49308f9ad3221bdbcaa, type: 3}
+  - SpeakingCharacterName: Greybeard
+    ConversationText: '*Burp*'
+    DisplayPic: {fileID: 21300000, guid: 9e35024a09ca84a74af5503413a007cc, type: 3}
